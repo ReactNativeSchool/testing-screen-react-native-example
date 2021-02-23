@@ -82,7 +82,7 @@ export default ({ navigation }) => {
   }
 
   if (submit.value && !password.valid) {
-    passwordErrorMsg = "Invalid password";
+    passwordErrorMsg = "Invalid password.";
   }
 
   return (
@@ -93,6 +93,7 @@ export default ({ navigation }) => {
         placeholder="example"
         onChangeText={username.set}
         error={usernameErrorMsg}
+        testID="SignIn.usernameInput"
       />
       <Input
         label="Password"
@@ -100,9 +101,10 @@ export default ({ navigation }) => {
         secureTextEntry
         onChangeText={password.set}
         error={passwordErrorMsg}
+        testID="SignIn.passwordInput"
       />
       <ErrorText messages={[usernameErrorMsg, passwordErrorMsg]} />
-      <Button text="Login" onPress={submit.set} />
+      <Button testID="SignIn.Button" text="Login" onPress={submit.set} />
     </KeyboardAvoidingView>
   );
 };

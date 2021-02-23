@@ -75,9 +75,9 @@ export const Input = ({ label, error, ...props }) => {
   );
 };
 
-export const Button = ({ text, onPress }) => {
+export const Button = ({ text, onPress, ...props }) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.button}>
+    <TouchableOpacity {...props} onPress={onPress} style={styles.button}>
       <Text style={styles.buttonText}>{text}</Text>
     </TouchableOpacity>
   );

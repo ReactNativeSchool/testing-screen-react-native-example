@@ -29,7 +29,8 @@
     "@testing-library/react-native": "^7.1.0",
     "eslint": "^7.20.0",
     "eslint-config-handlebarlabs": "^0.0.6",
-    "jest-expo": "^40.0.2"
+    "jest-expo": "^40.0.2",
+    "jest-fetch-mock": "^3.0.3"
   },
   "private": true,
   "jest": {
@@ -39,6 +40,9 @@
     ],
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
+    ],
+    "setupFiles": [
+      "./setupJest.js"
     ]
   }
 }

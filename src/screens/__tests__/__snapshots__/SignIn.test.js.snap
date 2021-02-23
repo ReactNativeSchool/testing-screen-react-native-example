@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handles valid input submission 1`] = `
+Array [
+  Array [
+    "https://jsonplaceholder.typicode.com/users",
+    Object {
+      "body": "{\\"username\\":\\"example\\",\\"password\\":\\"asdf\\"}",
+      "method": "POST",
+    },
+  ],
+]
+`;
